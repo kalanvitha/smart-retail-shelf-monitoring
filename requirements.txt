@@ -1,8 +1,9 @@
 streamlit
-opencv-python
+opencv-python-headless
 numpy
-textblob
-matplotlib
-scikit-learn
-pillow
 pandas
+Pillow
+textblob
+scikit-learn
+matplotlib
+python-3.10
