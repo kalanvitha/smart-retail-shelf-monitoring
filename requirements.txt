@@ -6,4 +6,3 @@ Pillow
 textblob
 scikit-learn
 matplotlib
-python-3.10
