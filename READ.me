@@ -1,0 +1,124 @@
+# 🛒 Smart Retail Shelf Monitoring System
+
+**Smart Retail Shelf Monitoring System** is an AI-powered Streamlit web application designed to help retail managers monitor shelf stock, analyze customer reviews, and predict sales trends. It uses image analysis to detect empty, partially filled, or misarranged shelves and allows real-time customer feedback.
+
+---
+
+## Features
+
+### 📷 Shelf Monitoring
+- Upload shelf images and get automated analysis:
+  - Empty Shelf
+  - Partially Filled Shelf
+  - Well Stocked Shelf
+  - Misarranged Shelf
+- Highlights empty slots and misaligned products.
+- Visual annotations for quick inspection.
+
+### 💬 Customer Reviews
+- Customers can submit reviews for shelf conditions.
+- Sentiment analysis using TextBlob to categorize reviews as positive or negative.
+- Managers can view all reviews and overall sentiment distribution.
+
+### 📈 Sales Prediction
+- Predict sales for future days using linear regression.
+- View historical sales trends and predictions.
+
+### 📊 Data History Dashboard
+- View shelf status summary, review records, and sales prediction history.
+- Visual charts for quick insights.
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/kalanvitha/SmartRetailShelfMonitoring.git
+cd SmartRetailShelfMonitoring
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the app:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## Database
+
+The app uses **SQLite** to store:
+
+- `shelf_data` – Shelf images and status
+- `review_data` – Customer reviews with polarity
+- `prediction_data` – Predicted sales for future days
+
+Database file `retail_data.db` is automatically created in the project folder.
+
+---
+
+## Folder Structure
+
+```
+SmartRetailShelfMonitoring/
+│
+├─ app.py                 # Main Streamlit app
+├─ requirements.txt       # Python dependencies
+├─ README.md              # Project documentation
+├─ retail_data.db         # SQLite database (auto-generated)
+├─ shelves/               # Uploaded shelf images
+```
+
+---
+
+## Usage
+
+1. **Login**
+   - Managers and customers can log in with their assigned credentials.  
+   - For testing purposes, you can create your own accounts in the app.
+   
+2. **Shelf Monitoring**
+   - Upload a shelf image.
+   - Get automated analysis with annotations.
+   - Receive alerts for empty or misarranged shelves.
+
+3. **Reviews**
+   - Customers can submit reviews and optional comments.
+   - Managers can view sentiment distribution and all reviews.
+
+4. **Sales Prediction**
+   - Enter a future day to predict sales using linear regression.
+   - Visualize trend analysis.
+
+5. **History**
+   - Monitor shelf, review, and prediction records with charts and tables.
+
+---
+
+## Technologies Used
+
+- Python 3
+- Streamlit
+- OpenCV
+- PIL (Pillow)
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- TextBlob
+- SQLite3
+
+---
+
+## License
+
+This project is for educational purposes and internal use.  
+Developed by **Kalanvitha & Imthiyaz**.
